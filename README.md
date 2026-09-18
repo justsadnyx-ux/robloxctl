@@ -7,14 +7,15 @@ A controller for your own Roblox accounts. Send friend requests, follow users, m
 
 ## Interface
 
-Running `robloxctl.exe` opens a **dark desktop window** (no terminal):
+Running `robloxctl.exe` opens a **dark desktop window** — no terminal window is ever shown:
 
 - **Account** — shows who you're logged in as; **Log in** opens a paste-your-cookie form, **Log out** clears it.
 - **Quick actions** — friend / follow, search a user, or join a game with two clicks.
-- **Sidebar** — `Me`, `Friend requests`, `My friends`.
-- **Command bar** — type any command from the table below (arrow keys recall history).
+- **Sidebar** — `My account`, `Friend requests`, `My friends`.
+- **Command bar** — type any command from the table below (arrow keys recall history, Enter runs).
+- **Log** — toolbar button that toggles a terminal-style log panel (timestamps for every command, result, and error). It opens automatically the first time something goes wrong so you can see what happened.
 
-Prefer the terminal? Every command works the old way too:
+Power users can also run everything from a terminal — the flags below print to the console and the process waits:
 
 | Flag | What it does |
 |---|---|
