@@ -1,0 +1,20 @@
+# source code stays private - public repo ships binaries only
+robloxctl.py
+requirements.txt
+*.spec
+
+# python
+__pycache__/
+*.pyc
+
+# build artifacts (exe is distributed via GitHub Releases, not the repo)
+build/
+dist/
+
+# local config / secrets
+*.cookie
+cookie
+.cache/
+venv/
+.vscode/
+.idea/
