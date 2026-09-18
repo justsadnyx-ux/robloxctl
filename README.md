@@ -88,12 +88,14 @@ Note: each instance plays as the account whose cookie minted its ticket. Multi-i
 
 ## Updating
 
-robloxctl checks for a newer release every time it starts. When one is available a window pops up with **what's new** and two choices:
+Every time robloxctl starts it checks GitHub for a newer release. If one exists:
 
-- **Update now** — downloads, swaps the exe, and restarts.
-- **Later** — keep using the current version (run `update` anytime).
+1. It quietly downloads and installs the new exe **in the background** (no prompts, no interruption).
+2. A dark window then tells you it's ready:
+   - **Restart now** — launches the updated exe right away.
+   - **Later** — keeps working in the current session; the new version starts next launch.
 
-You can also update silently with `robloxctl.exe --update`.
+You can trigger the same flow manually anytime with `update`, or update silently and exit with `robloxctl.exe --update`. Use `--no-update-check` to skip the background check.
 
 **Updating from v0.1.0 or v0.2.0:** those builds only replace the exe after the
 process has exited, so trigger the update as a *one-shot* command and let the
