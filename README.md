@@ -95,6 +95,19 @@ robloxctl checks for a newer release every time it starts. When one is available
 
 You can also update silently with `robloxctl.exe --update`.
 
+**Updating from v0.1.0 or v0.2.0:** those builds only replace the exe after the
+process has exited, so trigger the update as a *one-shot* command and let the
+window close — do **not** type `update` at the interactive prompt (the terminal
+would wait forever in v0.1.0). From a terminal:
+
+```
+robloxctl.exe --update
+```
+
+or double-click `robloxctl.exe update` in Explorer / run it from a prompt that
+closes afterwards. Starting with v0.2.1 the updater can swap the exe while the
+program is still running, so `update` works from inside the prompt too.
+
 ## Legal / disclaimer
 
 - Use this only on accounts you own.
